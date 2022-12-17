@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" autocomplete="off">
+        <fieldset style="width: 400px;">
+            <legend style="text-align: center;">Course Registraion Form</legend>
+            <br>
+            <div>
+                <label for="name">Name : </label>
+                <input type="text" id="name" placeholder="Enter your full name ">
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail : </label>
+                <input type="email" id="email">
+            </div>
+            <br>
+            <div>
+                <label for="Ph">Phone Number : </label>
+                <input type="tel" id="ph">
+            </div>
+            <br>
+            <div>
+                <label for="pw">Password : </label>
+                <input type="password" id="pw">
+            </div>
+            <br>
+            <div>
+                <label for="age">Age : </label>
+                <input type="number" id="age">
+            </div>
+            <br>
+            <div>
+                <label for="dob">Enter DOB : </label>
+                <input type="date" name="" id="dob" min="2000-01-01" max="2012-12-31">
+            </div>
+            <br>
+            <div>
+                <span>Gender : </span>
+                <input type="radio" id="ml" name="gender">
+                <label for="ml">Male</label>
+
+                <input type="radio" id="fm" name="gender">
+                <label for="fm">Female</label>
+
+                <input type="radio" id="ot" name="gender">
+                <label for="ot">Other</label>
+            </div>
+            <br>
+            <div>
+                <span>Select Courses : </span>
+                <input type="checkbox" id="cb">
+                <label for="cb">Frontend</label>
+
+                <input type="checkbox" id="be">
+                <label for="be">Backend</label>
+
+                <input type="checkbox" id="db">
+                <label for="db">DataBase</label>
+            </div>
+            <br>
+            <div>
+                <span>Select Timing : </span>
+                <br>
+                <select name="mytime" id="mytime" size="3" multiple>
+                    <option value="FirstBatch">8-9 am
+                    </option>
+                    <option value="FirstBatch">9-10 am</option>
+                    <option value="FirstBatch" selected>10-11 am</option>
+                    <option value="FirstBatch">11-12 pm</option>
+                    <option value="FirstBatch">12-13 pm</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <span>Introduce your self : </span>
+                <br>
+                <textarea name="ta" id="" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="dtl">Enter Meeting Date & Time :</label>
+                <input type="datetime-local" name="" id="dtl">
+            </div>
+            <br>
+            <div>
+                <label for="lc">Please Select Language : </label>
+                <input type="text" name="" id="lc" list="languages">
+                <datalist id="languages">
+                    <option value="Mongo DB">Mongo DB</option>
+                    <option value="Express JS">Express JS</option>
+                    <option value="Node JS">Node JS</option>
+                    <option value="React JS">React JS</option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="ck">Cooding Knowledge : </label>
+                <input type="range" name="" id="ck" min="0" max="10" value="0">
+            </div>
+            <br>
+            <div>
+                <label for="bs">Batch Size</label>
+                <input type="number" name="" id="bs" value="2" min="2" max="8">
+            </div>
+            <br>
+            <div>
+                <label for="m">Enter Joining Month : </label>
+                <input type="month" name="" id="">
+            </div>
+            <br>
+            <div>
+                <label for="cl">Choose any Color : </label>
+                <input type="color" name="" id="cl" value="#000000">
+            </div>
+            <br>
+            <div>
+                <label for="fl">Upload Your ID : </label>
+                <input type="file" name="" id="fl">
+            </div>
+            <br>
+            <div style="display: flex;">
+                <input type="image" name="" id="" src="submit.jpg" height="50px" width="50px">
+                <button value="reset"
+                    style="height: 30px;width: 50px; margin-top: 11px; background-color: red; border: 1px dashed yellow; color: white;">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
+
+<!-- autocomplete='off' for delete privious history -->
+<!-- <fieldset> for box line</fieldset> -->
+<!-- <legend> for form heading within box line</legend> -->
+<!-- size="2"  for size of selection part -->
+<!-- multiple for multiple value selected in option part with press ctrl -->
+<!-- seleted  for if u want already selected value in option part -->
+<!-- input ki list ko datalist ki id se connect kerna zaroori h -->
